@@ -72,3 +72,23 @@ footer {
     text-align: center;
     padding: 15px;
 }
+
+.location {
+    text-align: center;
+    padding: 60px 20px;
+    background: #fff0f6;
+}
+
+.location h2 {
+    color: #ff69b4;
+}
+
+.map-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.map-container iframe {
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
