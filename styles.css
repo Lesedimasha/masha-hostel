@@ -92,3 +92,13 @@ footer {
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
+
+.booking-info {
+    background: #fff0f6;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 400px;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 14px;
+}
