@@ -106,5 +106,27 @@
     <p>© 2023 Masha's Hostel | All Rights Reserved</p>
 </footer>
 
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+<script>
+(function(){
+    emailjs.init("YOUR_PUBLIC_KEY");
+})();
+
+document.getElementById("bookingForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm(
+        "YOUR_SERVICE_ID",
+        "YOUR_TEMPLATE_ID",
+        this
+    ).then(function() {
+        alert("Booking sent successfully!");
+    }, function(error) {
+        alert("Failed to send booking. Try again.");
+    });
+});
+</script>
+
 </body>
 </html>
